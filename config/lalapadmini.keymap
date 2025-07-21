@@ -1,8 +1,6 @@
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_LAYER   0
@@ -15,9 +13,11 @@
 #define SCROLL_L_LAYER  7
 
 // Mouse Scroll Value
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // cirque trackpad input&layer control
+
 &glidepoint_listener_R {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -166,10 +166,10 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp Q             &kp W         &kp E  &kp R      &kp T  &kp Y            &kp U      &kp I      &kp O                    &kp P
-&kp A             &kp S         &kp D  &kp F      &kp G  &kp H            &kp J      &kp K      &kp L                    &mt2 EQUAL MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C  &kp V      &kp B  &kp N            &kp M      &kp COMMA  &kp PERIOD               &mt RSHIFT SLASH
-&kp LCTRL         &kp LEFT_ALT         &kp SPACE  &mo 1  &lt 2 BACKSPACE  &kp ENTER             &mt CAPSLOCK LANGUAGE_2  &mt RCTRL LANGUAGE_1
+&lt 3 Q           &kp W         &kp E  &kp R        &kp T      &kp Y            &kp U      &kp I      &kp O                    &mt RIGHT_COMMAND P
+&mt LCTRL A       &kp S         &kp D  &kp F        &kp G      &kp H            &kp J      &kp K      &kp L                    &mt2 EQUAL MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C  &kp V        &kp B      &kp N            &kp M      &kp COMMA  &kp PERIOD               &mt RSHIFT SLASH
+&lt 3 ESC         &kp LEFT_ALT         &lt 4 SPACE  &lt 1 TAB  &lt 2 BACKSPACE  &kp ENTER             &mt CAPSLOCK LANGUAGE_2  &lt 3 LANGUAGE_1
             >;
         };
 
@@ -178,10 +178,10 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&mt2 F1 NUMBER_1  &mt2 F2 NUMBER_2  &mt2 F3 NUMBER_3  &mt2 F4 NUMBER_4  &mt2 F5 N5         &kp KP_COMMA     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE
-&mt2 F6 NUMBER_6  &mt2 F7 N7        &mt2 F8 N8        &mt2 F9 N9        &mt2 F10 N0        &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK
-&mt2 F11 GRAVE    &mt2 F12 SQT      &kp SEMICOLON     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS
-&trans            &trans                              &trans            &trans             &kp DELETE       &trans                            &none            &kp KP_PLUS
+&kp EXCLAMATION  &kp AT_SIGN    &kp HASH          &kp DOLLAR  &kp PERCENT  &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL         &kp KP_DIVIDE
+&kp QUESTION     &kp LESS_THAN  &kp GREATER_THAN  &none       &none        &kp UNDERSCORE        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON     &kp COLON
+&kp CARET        &kp AMPERSAND  &kp ASTERISK      &kp GRAVE   &kp TILDE    &kp PIPE              &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
+&trans           &trans                           &trans      &trans       &kp DELETE            &trans                                       &none             &none
             >;
         };
 
@@ -202,10 +202,10 @@
             sensor-bindings = <&volume_up_down>, <&volume_up_down>;
 
             bindings = <
-&trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3
-&trans  &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &bt BT_CLR    &bt BT_CLR_ALL  &trans
-&trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans        &trans          &trans
-&trans  &trans          &trans       &trans      &trans        &trans                      &trans          &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5      &kp NUMBER_6      &kp N7    &kp N8        &kp N9     &kp N0
+&trans        &trans        &trans        &bootloader   &sys_reset  &kp LEFT          &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&trans        &trans        &trans        &trans        &trans      &kp LC(UP_ARROW)  &kp HOME  &kp END       &trans     &trans
+&trans        &trans                      &trans        &trans      &trans            &trans                  &trans     &trans
             >;
         };
 
