@@ -198,7 +198,7 @@
         };
 
         NUMBER_LAYER {
-            display-name = "system_layer";
+            display-name = "number_layer";
             sensor-bindings = <&volume_up_down>, <&volume_up_down>;
 
             bindings = <
@@ -212,15 +212,15 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans     &mkp MCLK  &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &msc SCRL_UP    &mkp LCLK  &mkp RCLK  &kp RG(LEFT)  &kp RG(RIGHT)
-&trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &mkp MB4   &none      &mkp MB5      &trans
-&trans  &trans          &trans  &trans  &trans          &trans                &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans           &trans           &mkp MCLK    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &msc SCRL_UP     &mkp LCLK        &mkp RCLK    &kp RG(LEFT)  &kp RG(RIGHT)
+&trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN   &kp RS(RC(TAB))  &kp RC(TAB)  &mkp MB5      &trans
+&trans  &trans          &trans  &trans  &kp C_VOLUME_UP  &kp C_VOLUME_UP               &trans        &trans
             >;
         };
 
         SYSTEM_LAYER {
-            display-name = "scroll_r_layer";
+            display-name = "system_layer";
             bindings = <
 &trans  &trans  &trans  &none   &bootloader  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
