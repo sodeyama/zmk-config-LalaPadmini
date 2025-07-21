@@ -222,7 +222,7 @@
         SYSTEM_LAYER {
             display-name = "scroll_r_layer";
             bindings = <
-&trans  &trans  &trans  &reset  &bootloader  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &none   &bootloader  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans  &trans       &trans  &trans          &trans  &trans
