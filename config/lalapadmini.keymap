@@ -169,7 +169,7 @@
 &lt 3 Q           &kp W         &kp E  &kp R        &kp T      &kp Y            &kp U      &kp I      &kp O                    &mt RIGHT_COMMAND P
 &mt LCTRL A       &kp S         &kp D  &kp F        &kp G      &kp H            &kp J      &kp K      &kp L                    &mt2 RCTRL MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C  &kp V        &lt 5 B    &kp N            &kp M      &kp COMMA  &kp PERIOD               &mt RSHIFT SLASH
-&lt 3 ESC         &kp LEFT_ALT         &lt 4 SPACE  &lt 1 TAB  &lt 1 BACKSPACE  &kp ENTER             &mt CAPSLOCK LANGUAGE_2  &lt 3 LANGUAGE_1
+&lt 3 ESC         &kp LEFT_ALT         &lt 4 SPACE  &lt 1 TAB  &lt 1 BACKSPACE  &kp ENTER             &mt CAPSLOCK LANGUAGE_1  &lt 3 LANGUAGE_2
             >;
         };
 
