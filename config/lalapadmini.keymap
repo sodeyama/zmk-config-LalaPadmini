@@ -44,6 +44,14 @@
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_scroll_scaler 1 32>;
     };
+
+    cursor_scroller {
+        layers = <CURSOR>;
+        input-processors =
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_scroll_scaler 1 32>;
+    };
 };
 
 &glidepoint_listener_L {
@@ -62,6 +70,14 @@
 
     scroller {
         layers = <SCROLL_L_LAYER>;
+        input-processors =
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_scroll_scaler 1 32>;
+    };
+
+    cursor_scroller {
+        layers = <CURSOR>;
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
