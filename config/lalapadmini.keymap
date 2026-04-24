@@ -186,11 +186,6 @@
             key-positions = <6 7>;
         };
 
-        CenterClick {
-            bindings = <&mkp MB3>;
-            key-positions = <17 16>;
-        };
-
         RightClick {
             bindings = <&mkp MB2>;
             key-positions = <18 17>;
