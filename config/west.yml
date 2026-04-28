@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: ShiniNet
-      url-base: https://github.com/ShiniNet/
     - name: caksoylar
       url-base: https://github.com/caksoylar
   projects:
@@ -11,9 +9,6 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: cirque-input-module
-      remote: ShiniNet
-      revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
